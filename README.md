@@ -1,3 +1,4 @@
+![pong-game-card](https://github.com/Blindspot22/Rusty_Pong/assets/148756598/987c9478-0960-429c-ba0e-9a5362094702)
 
 # Rusty Pong
 
