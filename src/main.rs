@@ -200,7 +200,7 @@ impl event::EventHandler for MainState {
 }
 
 fn main() -> GameResult {
-    let cb = ggez::ContextBuilder::new("pong", "Scott");
+    let cb = ggez::ContextBuilder::new("pong", "TanTan");
     let (mut ctx, mut event_loop) = cb.build()?;
     graphics::set_window_title(&ctx, "Rusty Pong");
     let mut state = MainState::new(&mut ctx);
