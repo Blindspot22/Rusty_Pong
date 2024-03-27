@@ -14,8 +14,8 @@ const RACKET_WIDTH_HALF: f32 = RACKET_WIDTH * 0.5;
 const RACKET_HEIGHT_HALF: f32 = RACKET_HEIGHT * 0.5;
 const BALL_SIZE: f32 = 30.0;
 const BALL_SIZE_HALF: f32 = BALL_SIZE * 0.5;
-const PLAYER_SPEED: f32 = 600.0;
-const BALL_SPEED: f32 = 500.0;
+const PLAYER_SPEED: f32 = 700.0;
+const BALL_SPEED: f32 = 900.0;
 
 fn clamp(value: &mut f32, low: f32, high: f32) {
     if *value < low {
@@ -200,7 +200,7 @@ impl event::EventHandler for MainState {
 }
 
 fn main() -> GameResult {
-    let cb = ggez::ContextBuilder::new("pong", "TanTan");
+    let cb = ggez::ContextBuilder::new("pong", "Enow Scott");
     let (mut ctx, mut event_loop) = cb.build()?;
     graphics::set_window_title(&ctx, "Rusty Pong");
     let mut state = MainState::new(&mut ctx);
