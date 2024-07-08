@@ -15,7 +15,7 @@ const RACKET_HEIGHT_HALF: f32 = RACKET_HEIGHT * 0.5;
 const BALL_SIZE: f32 = 30.0;
 const BALL_SIZE_HALF: f32 = BALL_SIZE * 0.5;
 const PLAYER_SPEED: f32 = 700.0;
-const BALL_SPEED: f32 = 900.0;
+const BALL_SPEED: f32 = 400.0;
 
 fn clamp(value: &mut f32, low: f32, high: f32) {
     if *value < low {
@@ -40,14 +40,8 @@ fn move_racket(pos: &mut na::Point2<f32>, keycode: KeyCode, y_dir: f32, ctx: &mu
 
 fn randomize_vec(vec: &mut na::Vector2<f32>, x: f32, y: f32) {
     let mut rng = thread_rng();
-    vec.x = match rng.gen_bool(0.5) {
-        true => x,
-        false => -x,
-    };
-    vec.y = match rng.gen_bool(0.5) {
-        true => y,
-        false => -y,
-    };
+    vec.x = if rng.gen_bool(0.5) { x } else { -x };
+    vec.y = if rng.gen_bool(0.5) { y } else { -y };
 }
 
 struct MainState {
@@ -67,9 +61,10 @@ impl MainState {
         let mut ball_vel = na::Vector2::new(0.0, 0.0);
         randomize_vec(&mut ball_vel, BALL_SPEED, BALL_SPEED);
 
+        const PLAYER_OFFSET: f32 = RACKET_WIDTH_HALF + PADDING;
         MainState {
-            player_1_pos: na::Point2::new(RACKET_WIDTH_HALF + PADDING, screen_h_half),
-            player_2_pos: na::Point2::new(screen_w - RACKET_WIDTH_HALF - PADDING, screen_h_half),
+            player_1_pos: na::Point2::new(PLAYER_OFFSET, screen_h_half),
+            player_2_pos: na::Point2::new(screen_w - PLAYER_OFFSET, screen_h_half),
             ball_pos: na::Point2::new(screen_w_half, screen_h_half),
             ball_vel,
             player_1_score: 0,
