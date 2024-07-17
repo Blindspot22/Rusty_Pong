@@ -1,5 +1,11 @@
 
-![hqdefault](https://github.com/Blindspot22/Rusty_Pong/assets/148756598/1d233c6c-d274-4bfe-98da-fd5af287f8ee)
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/Blindspot22/Rusty_Pong/assets/148756598/1d233c6c-d274-4bfe-98da-fd5af287f8ee" alt="hqdefault" />
+    </td>
+  </tr>
+</table>
 
 # Rusty Pong
 
