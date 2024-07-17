@@ -185,7 +185,8 @@ impl event::EventHandler for MainState {
         let mut score_pos = na::Point2::new(screen_w_half, 40.0);
         let (score_text_w, score_text_h) = score_text.dimensions(ctx);
         score_pos -= na::Vector2::new(score_text_w as f32 * 0.5, score_text_h as f32 * 0.5);
-        draw_param.dest = score_pos.into();
+        draw_param.dest = score_pos.into()
+        ;
 
         graphics::draw(ctx, &score_text, draw_param)?;
 
