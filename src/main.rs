@@ -6,6 +6,7 @@ use ggez::nalgebra as na;
 use ggez::{Context, GameResult};
 use rand::{self, thread_rng, Rng};
 
+
 const PADDING: f32 = 40.0;
 const MIDDLE_LINE_W: f32 = 2.0;
 const RACKET_HEIGHT: f32 = 100.0;
