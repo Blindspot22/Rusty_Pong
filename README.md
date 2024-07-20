@@ -9,6 +9,7 @@
 
 # Rusty Pong
 
+
 Rusty Pong is a simple implementation of the classic game Pong using the Rust programming language and the ggez game framework.
 
 ## Description
