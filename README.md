@@ -26,6 +26,7 @@ Rusty Pong features two paddles controlled by players and a ball that bounces be
 
 ## Getting Started
 
+
 To play Rusty Pong, follow these steps:
 
 1. Ensure you have Rust and Cargo installed on your system.
