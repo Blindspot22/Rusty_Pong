@@ -49,6 +49,7 @@ To play Rusty Pong, follow these steps:
 
 ## Dependencies
 
+
 Rusty Pong relies on the following dependencies:
 
 - ggez: A lightweight game framework for Rust.
