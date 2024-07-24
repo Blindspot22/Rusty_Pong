@@ -55,6 +55,7 @@ Rusty Pong relies on the following dependencies:
 - ggez: A lightweight game framework for Rust.
 - rand: A crate for generating random numbers.
 
+
 ## Credits
 
 Rusty Pong was created by Enow Scott.
