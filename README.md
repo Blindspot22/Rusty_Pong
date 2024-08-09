@@ -19,9 +19,13 @@ Rusty Pong features two paddles controlled by players and a ball that bounces be
 ## Features
 
 - Two-player gameplay.
+
 - Simple and intuitive controls.
+
 - Realistic ball physics.
+
 - Score tracking for each player.
+
 - Responsive and smooth gameplay experience.
 
 ## Getting Started
